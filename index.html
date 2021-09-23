@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+ Author: Daniel Tujo
+ Class:  Software Engineering
+ Project: Lab 2 / Dice Roller
+ Description: Static Web page utilizing Javascript to roll dice.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Daniel's Dice roller</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body onload="RollDice()">
+        <h1>Daniel's Dice roller</h1>
+        <!-- 
+            Button container is a container for the button to be
+            able to change position of the button
+        -->        
+        <div id="button-container">
+            <button id="button-random" type="button" onclick="RollDice()">Throw them bones!</button>
+        </div>
+        <!-- 
+            Div element is a contain for more div elements. Allows elements to be
+            in-line ( on the same line).
+        -->>
+        <div id="div-container">
+            <!--
+                Individual div element for each dice, making it easier to 
+                set attributes, spacing, margins, etc.
+            -->
+            <div class="dice">
+                <p class="dice" id="dice_1">1</p>
+            </div>
+            <div class="dice">
+                <p class="dice" id="dice_2">2</p>
+            </div>
+            <div class="dice">
+                <p class="dice" id="dice_3">3</p>
+            </div>
+            <div class="dice">
+                <p class="dice" id="dice_4">4</p>
+            </div>
+            <div class="dice">
+                <p class="dice" id="dice_5">5</p>
+            </div>
+            <div class="dice">
+                <p class="dice" id="dice_6">6</p>
+            </div>
+            <p>Total: <span id="Total"></span></p>
+        </div>     
+
+        
+        
+        
+    </body>
+</html>
